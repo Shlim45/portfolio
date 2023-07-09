@@ -29,7 +29,7 @@
 
 .card header {
     font-size: 0.8rem;
-    color: rgba(var(--foreground-rgb), 0.8);
+    color: rgba(var(--foreground-rgb), 0.6);
     margin-bottom: 0.3rem;
 }
 
@@ -51,14 +51,18 @@
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
         background: rgba(var(--card-rgb), 0.1);
+        transform: scale(103%);
+        transition: 200ms;
     }
 
     .card:hover span {
-        transform: translateX(4px);
+        /* transform: translateX(10px); */
     }
 }
 
 @media (prefers-reduced-motion) {
+
+    .card:hover,
     .card:hover span {
         transform: none;
     }

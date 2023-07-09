@@ -10,30 +10,42 @@ const GitHub = () => {
     useEffect(() => {
         const dummyProjects = [
             {
+                languages: ['Java', 'MySQL'],
+                title: 'Olmran MUD',
+                description: "A Custom MUD Engine for Olmran, written in Java.  Heavily inspired by Darkness Falls: The Crusade, a MUD from the 1990's.",
+                url: 'https://www.olmran.net'
+            },
+            {
+                languages: ['JavaScript', 'React', 'Next.js', 'Supabase', 'Cloudinary'],
+                title: 'RC Custom Millworks Website',
+                description: "A server-side rendered business website created for a cabinet shop.  Includes custom CMS for updating content.",
+                url: 'https://www.rccustommillworks.com'
+            },
+            {
                 languages: ['C++'],
                 title: 'Olmran MUD Client',
                 description: 'A Custom MUD Client for Olmran, written in C/C++ for Windows.',
-                url: 'Olmran_Client'
+                url: 'https://github.com/shlim45/Olmran_Client'
             },
             {
                 languages: ['JavaScript'],
                 title: 'NHL Stats App',
                 description: 'A web application for viewing NHL statistics. Uses next.js for rendering react components from the server.',
-                url: 'nhl-stats-app'
+                url: 'https://github.com/shlim45/nhl-stats-app'
 
             },
             {
                 languages: ['Go'],
                 title: 'goMud',
                 description: 'MUD engine written in goLang.',
-                url: 'goMud'
+                url: 'https://github.com/shlim45/goMud'
 
             },
             {
-                languages: ['Java'],
+                languages: ['Java', 'MySQL'],
                 title: 'Appointment Scheduler',
                 description: 'A GUI-based scheduling desktop application.',
-                url: 'scheduler'
+                url: 'https://github.com/shlim45/scheduler'
             }
         ];
 
@@ -44,9 +56,11 @@ const GitHub = () => {
         <section className={styles.projects}>
             <h2>Projects</h2>
             {projects?.map((project, index) => (
-                <Link href={`https://github.com/shlim45/${project.url}`} rel="noopener noreferrer" target="_blank" key={index}>
+                <Link href={`${project.url}`} rel="noopener noreferrer" target="_blank" key={index}>
                     <div className={styles.card}>
-                        <header>{project.languages?.map(lang => `${lang} `)}</header>
+                        <header>
+                            {project.languages?.join(', ')}
+                        </header>
                         <h3><span>{project.title}</span></h3>
                         <p>{project.description}</p>
                     </div>
