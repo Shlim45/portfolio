@@ -1,9 +1,9 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(25%, auto));
-    width: var(--max-width);
-    max-width: 100%;
-    margin-top: 5rem;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 5rem;
 }
 
 /* Mobile */
@@ -12,11 +12,13 @@
         grid-template-columns: 1fr;
         margin-bottom: 5rem;
         max-width: 320px;
-        text-align: center;
     }
 
     .grid div {
-        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 2rem;
     }
 }
 
@@ -24,5 +26,18 @@
 @media (min-width: 701px) and (max-width: 1120px) {
     .grid {
         grid-template-columns: repeat(2, 50%);
+        margin: 3rem 0;
+    }
+
+
+    .grid div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+    }
+
+    .grid a {
+        padding: 0.3rem;
     }
 }
