@@ -8,6 +8,17 @@
   min-height: 100vh;
 }
 
+.photo {
+  position: relative;
+  width: 175px;
+  height: 239px;
+  max-width: 175px;
+  max-height: 239px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -27,6 +38,7 @@
 .description h2 {
   font-weight: 400;
   color: rgba(var(--foreground-rgb), 0.7);
+  margin-bottom: 1.5rem;
 }
 
 .description a {
@@ -94,10 +106,12 @@
 @media (max-width: 700px) {
   .main {
     padding: 2rem;
+    flex-direction: column;
   }
 
-  .main {
-    flex-direction: column;
+  .photo {
+    max-width: 125px;
+    max-height: 170px;
   }
 
   .center {
@@ -159,17 +173,14 @@
   .main {
     padding: 2rem;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .photo {
+    max-width: 150px;
+    max-height: 205px;
   }
 }
+
+@media (prefers-color-scheme: dark) {}
 
 @keyframes rotate {
   from {

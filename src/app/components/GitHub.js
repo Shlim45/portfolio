@@ -22,20 +22,20 @@ const GitHub = () => {
                 url: 'https://www.rccustommillworks.com'
             },
             {
-                languages: ['C++'],
+                languages: ['C/C++'],
                 title: 'Olmran MUD Client',
                 description: 'A Custom MUD Client for Olmran, written in C/C++ for Windows.',
                 url: 'https://github.com/shlim45/Olmran_Client'
             },
             {
-                languages: ['JavaScript'],
+                languages: ['JavaScript', 'React', 'Next.js', 'API'],
                 title: 'NHL Stats App',
-                description: 'A web application for viewing NHL statistics. Uses next.js for rendering react components from the server.',
+                description: 'A web application for viewing NHL statistics. Uses Next.js for rendering React components from the server.',
                 url: 'https://github.com/shlim45/nhl-stats-app'
 
             },
             {
-                languages: ['Go'],
+                languages: ['Go', 'MySQL'],
                 title: 'goMud',
                 description: 'MUD engine written in goLang.',
                 url: 'https://github.com/shlim45/goMud'
