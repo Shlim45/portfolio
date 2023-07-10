@@ -12,6 +12,7 @@ export default function Home() {
           <div className={styles.photo}>
             <Image
               src={self}
+              alt='Photograph of Jonathan Hawranko'
               fill
               sizes="(max-width: 700px) 125px, (max-width: 1120px) 150px, 175px"
               quality={100}
