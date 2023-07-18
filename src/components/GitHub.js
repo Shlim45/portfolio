@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link';
-import styles from '@/app/styles/GitHub.module.css'
+import styles from '@/styles/GitHub.module.css'
 import { useState, useEffect } from 'react';
 
 const GitHub = () => {

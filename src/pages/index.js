@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import self from '../../public/self.jpg'
-import styles from './page.module.css'
-import GitHub from './components/GitHub'
-import Footer from './components/Footer'
+import self from '@/../public/self.jpg'
+import styles from '@/styles/page.module.css'
+import GitHub from '@/components/GitHub'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
