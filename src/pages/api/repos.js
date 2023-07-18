@@ -3,7 +3,14 @@ export default async function handler(req, res) {
         headers: {
             Authorization: process.env.GITHUB_ACCESS_TOKEN,
         },
-    }).json();
+    });
 
     console.log(data);
+
+    if (data) {
+        res.status(200).json({ data });
+    }
+    else {
+        res.status(500).json({ error: 'Error fetching data' });
+    }
 }
