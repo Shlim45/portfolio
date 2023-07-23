@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import self from '@/../public/self.jpg'
 import styles from '@/styles/page.module.css'
@@ -39,6 +40,9 @@ export const getStaticProps = async () => {
 export default function Home({ repos }) {
   return (
     <>
+      <Head>
+        <title>Jonathan Hawranko</title>
+      </Head>
       <main className={styles.main}>
         <section className={styles.description}>
           <div className={styles.photo}>
