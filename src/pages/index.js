@@ -52,9 +52,7 @@ export default function Home({ repos }) {
             />
           </div>
           <h1>Jonathan Hawranko</h1>
-          <h2>Software/Web Developer</h2>
-          <p>Occaecat ipsum exercitation veniam officia id ex aute in esse cupidatat sint non. Tempor non laborum minim magna ipsum enim nisi occaecat dolor. Dolore non ex et laborum ipsum consequat eiusmod pariatur. In cillum elit consequat nulla dolor laborum id et. Laboris sit incididunt adipisicing fugiat mollit fugiat pariatur magna elit minim aliqua ullamco exercitation Lorem. Commodo sint adipisicing qui proident labore ex duis deserunt culpa magna. Commodo anim irure nisi in voluptate.</p>
-          <p>Fugiat fugiat aute nostrud elit elit ullamco do sunt nostrud laboris dolore est. Irure anim enim nisi esse ex aute ipsum duis officia do tempor eu irure. Amet consequat fugiat duis ad sint non enim adipisicing quis laborum mollit duis proident.</p>
+          <p>Full-stack web and software developer from Pittsburgh, PA.  I have recently earned a Bachelor of Science, majoring in Computer Science at Western Governors University.  My passion is learning new technologies and turning ideas into experiences.</p>
           <Footer />
         </section>
 
