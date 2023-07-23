@@ -109,6 +109,10 @@
     flex-direction: column;
   }
 
+  .description h1 {
+    font-size: 1.6rem;
+  }
+
   .photo {
     max-width: 125px;
     max-height: 170px;
