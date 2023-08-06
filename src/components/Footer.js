@@ -3,7 +3,6 @@ import styles from "@/styles/Footer.module.css"
 
 const Footer = () => {
     return (
-
         <section className={styles.grid}>
             <div>
                 <Link href="https://www.linkedin.com/in/jhawranko/" rel="noopener noreferrer" target="_blank">
@@ -54,7 +53,6 @@ const Footer = () => {
                     </svg> */}
                 </Link>
             </div>
-
         </section>
     )
 }

@@ -3,8 +3,38 @@
     grid-template-columns: repeat(4, minmax(25%, auto));
     width: 100%;
     max-width: var(--max-width);
-    margin: 5rem;
+    margin: 5rem 0;
 }
+
+.grid div {
+    margin: auto;
+    color: rgba(var(--foreground-rgb), 0.4);
+}
+
+.grid a {
+    vertical-align: middle;
+}
+
+.grid span {
+    color: rgba(var(--foreground-rgb), 0.8);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .grid div:hover {
+        color: rgba(var(--foreground-rgb), 1);
+        transform: scale(105%);
+        transition: 200ms;
+    }
+}
+
+@media (prefers-reduced-motion) {
+
+    .grid div:hover {
+        transform: none;
+    }
+}
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1200px) {
@@ -12,14 +42,6 @@
         grid-template-columns: repeat(2, 30%);
         margin: 2.5rem 0;
         justify-content: center;
-    }
-
-
-    .grid div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
     }
 
     .grid a {
@@ -37,8 +59,12 @@
     }
 
     .grid div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: none;
+        color: rgba(var(--foreground-rgb), 1);
+    }
+
+
+    .grid div:hover {
+        transform: none;
     }
 }

@@ -6,6 +6,8 @@
   align-items: center;
   padding: 5rem;
   min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 .photo {
