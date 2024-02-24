@@ -3,6 +3,7 @@ import Image from 'next/image'
 import self from '@/../public/self.jpg'
 import styles from '@/styles/page.module.css'
 import GitHub from '@/components/GitHub'
+import Projects from '@/components/Projects'
 import Footer from '@/components/Footer'
 import { Octokit } from "octokit";
 
@@ -56,10 +57,12 @@ export default function Home({ repos }) {
             />
           </div>
           <h1>Jonathan Hawranko</h1>
+          <h2>Software Developer</h2>
           <p>Full-stack web and software developer from Pittsburgh, PA.  I have recently earned a Bachelor of Science, majoring in Computer Science at Western Governors University.  My passion is learning new technologies and turning ideas into experiences.</p>
           <Footer />
         </section>
 
+        <Projects />
         <GitHub repos={repos} />
 
       </main>

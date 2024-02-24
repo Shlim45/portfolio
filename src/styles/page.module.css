@@ -1,11 +1,8 @@
 .main {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 5rem;
-  min-height: 100vh;
+  padding: 5rem 0;
   max-width: var(--max-width);
   margin: auto;
 }
@@ -26,9 +23,10 @@
   justify-content: inherit;
   align-items: inherit;
   flex-direction: column;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 300;
   max-width: var(--max-width);
-  width: 50%;
+  width: 90%;
   z-index: 2;
   font-family: var(--font-mono);
 }
@@ -38,7 +36,7 @@
 }
 
 .description h2 {
-  font-weight: 400;
+  font-weight: 300;
   color: rgba(var(--foreground-rgb), 0.7);
   margin-bottom: 1.5rem;
 }
@@ -108,11 +106,15 @@
 @media (max-width: 1200px) {
   .main {
     padding: 2rem;
-    flex-direction: column;
   }
 
   .description h1 {
     font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description h2 {
+    font-size: 1.3rem;
   }
 
   .photo {
@@ -130,8 +132,7 @@
   }
 
   .description {
-    font-size: 0.8rem;
-    width: 95%;
+    width: 100%;
   }
 
 
@@ -150,6 +151,8 @@
     align-items: center;
     padding: 2rem 1rem 1.4rem;
   }
+
+
 }
 
 /* Tablet and Smaller Desktop */

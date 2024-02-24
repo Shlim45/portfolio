@@ -1,7 +1,8 @@
 .projects {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 600px;
+    padding: 2rem 0;
 }
 
 .projects h2 {
@@ -23,7 +24,7 @@
 }
 
 .card header {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: rgba(var(--foreground-rgb), 0.6);
     margin-bottom: 0.3rem;
 }
@@ -36,7 +37,8 @@
 .card p {
     margin: 0;
     opacity: 0.6;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 300;
     line-height: 1.5;
     max-width: 90%;
     color: rgba(var(--foreground-rgb), 0.5);
@@ -48,10 +50,6 @@
         background: rgba(var(--card-rgb), 0.1);
         transform: scale(103%);
         transition: 200ms;
-    }
-
-    .card:hover span {
-        /* transform: translateX(10px); */
     }
 }
 
@@ -71,11 +69,19 @@
     }
 
     .card {
-        padding: 1rem 2.5rem;
+        padding: 2rem;
     }
 
-    .card h2 {
-        margin-bottom: 0.5rem;
+    .card>header {
+        margin-bottom: 0.75rem;
+    }
+
+    .card h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .card p {
+        max-width: 100%;
     }
 }
 
