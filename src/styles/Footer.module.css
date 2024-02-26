@@ -35,6 +35,12 @@
     }
 }
 
+@media (prefers-color-scheme: light) {
+    .grid span {
+        color: rgb(var(--foreground-rgb));
+    }
+}
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1200px) {

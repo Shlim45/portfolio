@@ -50,6 +50,7 @@
   position: relative;
   margin: 0;
   padding: 1rem;
+  line-height: 1.5rem;
 }
 
 .code {
@@ -167,7 +168,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {}
+@media (prefers-color-scheme: light) {}
 
 @keyframes rotate {
   from {

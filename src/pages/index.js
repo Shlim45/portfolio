@@ -62,7 +62,7 @@ export default function Home({ repos }) {
           </div>
           <h1>Jonathan Hawranko</h1>
           <h2>Software Developer</h2>
-          <p>Full-stack web and software developer from Pittsburgh, PA.  I have recently earned a Bachelor of Science, majoring in Computer Science at Western Governors University.  My passion is learning new technologies and turning ideas into experiences.</p>
+          <p>Full-stack web and software developer from Pittsburgh, PA and a graduate of Western Governors University with a Bachelor of Science in Computer Science.  My passion is learning new technologies and turning ideas into experiences.  You may check out a few of my live projects and code repositories below.</p>
           <Footer />
         </section>
 

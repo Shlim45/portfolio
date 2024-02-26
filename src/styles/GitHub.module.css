@@ -12,10 +12,18 @@
 
 .card {
     padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     transition: background 200ms, border 200ms;
-    background-color: rgb(var(--callout-rgb));
+    background-color: rgb(var(--card-rgb));
     letter-spacing: .1ch;
+    position: relative;
+}
+
+.card>.link_icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgba(var(--foreground-rgb), 0.3);
 }
 
 .card span {
@@ -47,9 +55,24 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
+        background: rgba(var(--card-rgb), 0.7);
+        transform: scale(103%);
+        transition: 200ms;
+        border: none;
+    }
+
+    .card:hover>.link_icon {
+        transition: 200ms;
+        color: rgba(var(--foreground-rgb), 0.8);
+    }
+}
+
+@media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
+    .card:hover {
         background: rgba(var(--card-rgb), 0.1);
         transform: scale(103%);
         transition: 200ms;
+        border: none;
     }
 }
 
@@ -72,6 +95,10 @@
         padding: 2rem;
     }
 
+    .card>.link_icon {
+        color: rgba(var(--foreground-rgb), 0.8);
+    }
+
     .card>header {
         margin-bottom: 0.75rem;
     }
@@ -91,16 +118,25 @@
         width: 80%;
         min-width: 500px;
     }
+
+    .card>.link_icon {
+        color: rgba(var(--foreground-rgb), 0.8);
+    }
 }
 
-@media (prefers-color-scheme: dark) {}
+@media (prefers-color-scheme: light) {
 
-@keyframes rotate {
-    from {
-        transform: rotate(360deg);
+    .card {
+        color: rgb(var(--foreground-rgb));
+        box-shadow: 3px 3px 10px rgba(var(--foreground-rgb), 0.4);
     }
 
-    to {
-        transform: rotate(0deg);
+    .card:hover {
+        background-color: rgb(var(--card-rgb));
+        box-shadow: 5px 5px 15px rgba(var(--foreground-rgb), 0.4);
+    }
+
+    .card p {
+        color: rgb(var(--foreground-rgb));
     }
 }
