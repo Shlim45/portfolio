@@ -42,7 +42,7 @@ export default function Home({ repos }) {
   return (
     <>
       <Head>
-        <title>Jonathan Hawranko</title>
+        <title>Jonathan Hawranko | Software Developer</title>
         <meta name="keywords" content="jonathan jon hawranko software web developer pittsburgh" />
         <meta name="description" content="Full-stack web and software developer from Pittsburgh, PA." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,8 +60,8 @@ export default function Home({ repos }) {
               priority={true}
             />
           </div>
-          <h1>Jonathan Hawranko</h1>
-          <h2>Software Developer</h2>
+          <h1 className={styles.heading}>Jonathan Hawranko</h1>
+          <h2 className={styles.subHeading}>Software Developer</h2>
           <p>Full-stack web and software developer from Pittsburgh, PA and a graduate of Western Governors University with a Bachelor of Science in Computer Science.  My passion is learning new technologies and turning ideas into experiences.  You may check out a few of my live projects and code repositories below.</p>
           <Footer />
         </section>

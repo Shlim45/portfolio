@@ -31,12 +31,12 @@
   font-family: var(--font-mono);
 }
 
-.description h1 {
-  font-size: 2rem;
+.description .heading {
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.description h2 {
+.description .subHeading {
   font-weight: 300;
   color: rgba(var(--foreground-rgb), 0.7);
   margin-bottom: 1.5rem;
@@ -110,12 +110,12 @@
     padding: 2rem;
   }
 
-  .description h1 {
-    font-size: 1.6rem;
+  .description .heading {
+    font-size: 1.9rem;
   }
 
-  .description h2 {
-    font-size: 1.3rem;
+  .description .subHeading {
+    font-size: 1.5rem;
   }
 
   .photo {
@@ -169,13 +169,3 @@
 }
 
 @media (prefers-color-scheme: light) {}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-}
